@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">ButterflyMX</string>
+
+    <!-- SharedPref Keys -->
+    <string name="spPrefTag">ButterflyMXUser</string>
+    <string name="spUserJIDKey">userJIDKey</string>
+    <string name="spUserPasswordKey">userPasswordKey</string>
+    <string name="spUserIsLoggedInKey">userIsLoggedInKey</string>
+    <string name="spIsUserDisconnectedKey">isUserDisconnectedKey</string>
+    <string name="spIsUserRememberedKey">isUserRememberedKey</string>
+    <string name="spUserChatsKey">userChatsKey</string>
+
+    <!-- Login -->
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_remember_prompt">Remember me</string>
+    <string name="login_button">Login</string>
+    <string name="splash_status">Signing in..</string>
+
+    <!-- Chat -->
+    <string name="message_sender">Sender :</string>
+    <string name="message_dummy_sender">User </string>
+    <string name="message_dummy_text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</string>
+    <string name="logout_button">Logout</string>
+    <string name="no_messages">No messages :(</string>
+    <string name="compose_title">Compose message</string>
+    <string name="compose_recipient">Recipient</string>
+    <string name="compose_text_prompt">Message</string>
+    <string name="compose_send">Send</string>
+    <string name="compose_cancel">Cancel</string>
+
+    <!-- Status -->
+    <string name="status">Status : </string>
+    <string name="status_connected">Connected</string>
+    <string name="status_connecting">Connecting..</string>
+    <string name="status_disconnected">Disconnected</string>
+
+    <!-- Callback -->
+    <string name="connection_failure">Failed to establish connection</string>
+
+</resources>

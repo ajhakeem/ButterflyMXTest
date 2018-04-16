@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccentDark"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/llSpacer1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_below="@id/tvDialogTitle"
+        android:layout_marginTop="12dp"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilRecipent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llSpacer1"
+        android:hint="@string/compose_recipient"
+        android:background="@color/lightGrey"
+        android:layout_marginTop="4dp">
+
+        <EditText
+            android:id="@+id/etMessageRecipient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilRecipent"
+        android:background="@color/lightGrey"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/etMessageText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:hint="@string/compose_text_prompt"
+            android:gravity="start"
+            android:layout_below="@id/etMessageRecipient"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:id="@+id/llSpacer2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_below="@id/tilMessage"
+        android:layout_marginTop="24dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/llDialogWrapper"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/llSpacer2"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/bDialogNegative"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginBottom="4dp"
+            android:text="@string/compose_cancel"/>
+
+        <Button
+            android:id="@+id/bDialogPositive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="@string/compose_send"
+            style="@style/Base.Widget.AppCompat.Button.Colored"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
